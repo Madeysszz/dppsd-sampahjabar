@@ -1,0 +1,40 @@
+﻿{
+    "source_notebook":  "SOURCE_CODE_DATMIN_KELOMPOK1.ipynb",
+    "source_notebook_sha256":  "bdd253dd39471609418cf110232adaf7fce532ea9fdd28607d3c2379a411e9ae",
+    "source_cells_zero_based":  {
+                                    "region_names_and_cluster_labels":  22,
+                                    "numeric_features":  16
+                                },
+    "snapshot_file":  "data/sampah_jabar_snapshot.csv",
+    "snapshot_type":  "Snapshot data olahan yang diekstrak dari output notebook tersimpan; bukan data mentah.",
+    "row_count":  27,
+    "unique_region_count":  27,
+    "feature_columns":  [
+                            "% S. Terkelola",
+                            "% S. Belum Terkelola",
+                            "jumlah_sampah_ton_per_hari",
+                            "Jumlah_Unit",
+                            "Jumlah_Penduduk",
+                            "Timbulan_num",
+                            "Progress_SA_num"
+                        ],
+    "reference_cluster_column":  "Klaster_Notebook",
+    "original_csv":  {
+                         "path_in_notebook":  "data_sampah.csv",
+                         "available":  false
+                     },
+    "original_geojson":  {
+                             "path_in_notebook":  "Jabar_By_Kab.geojson",
+                             "available":  false
+                         },
+    "data_year":  null,
+    "source_url":  null,
+    "notes":  [
+                  "Tahun data dan URL sumber tidak dicantumkan dalam notebook.",
+                  "Progress_SA_num sudah dikonversi menjadi numerik dan nilai gagal konversi sudah diimputasi median oleh notebook; nilai mentah sebelum imputasi tidak tersedia.",
+                  "Kolom persentase mempertahankan skala angka source; tidak dikalikan 100. Definisi satuannya terhadap sumber asli belum terverifikasi.",
+                  "Timbulan_num berasal dari penghapusan teks tpd pada Timbulan. jumlah_sampah_ton_per_hari merupakan kolom terpisah; definisi detailnya belum terverifikasi.",
+                  "Klaster_Notebook menyimpan label referensi 0, 1, 2 dari output notebook, bukan urutan baik atau buruk.",
+                  "Nilai numerik mengikuti presisi tampilan HTML output notebook; data mentah asli belum tersedia untuk verifikasi presisi lebih lanjut."
+              ]
+}
